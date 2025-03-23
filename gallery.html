@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <nav>
+        <h1>Gallery</h1>
+        <ul>
+            <li><a href="#" id="gallery-link">Gallery</a></li>
+            <li><a href="#" id="upload-link">Upload Images</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section" class="hidden">
+        <h2>Image Gallery</h2>
+        <div id="image-container"></div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload-section" class="hidden">
+        <h2>Upload Images</h2>
+        <div class="upload-buttons">
+            <button id="open-camera">Open Camera</button>
+            <button id="file-upload-btn">Upload from Device</button>
+        </div>
+        <input type="file" id="file-upload" accept="image/*">
+    </section>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
